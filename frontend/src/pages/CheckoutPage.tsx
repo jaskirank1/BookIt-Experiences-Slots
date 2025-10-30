@@ -180,7 +180,7 @@ const Checkout = () => {
               type="button"
               onClick={handleApplyPromo}
               className="
-                w-[120px] h-[42px] bg-[#161616] rounded-[6px] text-white text-[15px] font-medium md:w-[104px]
+                cursor-pointer w-[120px] h-[42px] bg-[#161616] rounded-[6px] text-white text-[15px] font-medium md:w-[104px]
                 max-[460px]:w-[90px] max-[460px]:text-[13px] max-[460px]:h-[38px]
               "
             >

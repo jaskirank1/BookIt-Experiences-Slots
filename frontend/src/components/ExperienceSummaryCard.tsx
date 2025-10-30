@@ -82,7 +82,7 @@ const ExperienceSummaryCard: React.FC<Props> = ({
         <div className="flex items-center gap-2">
           {/* Decrease */}
           <button
-            className="border border-[#C9C9C9] flex items-center justify-center 
+            className="border border-[#C9C9C9] flex items-center justify-center cursor-pointer
             w-5 h-5 max-[480px]:w-4 max-[480px]:h-4"
             onClick={handleDecrease}
           >
@@ -95,7 +95,7 @@ const ExperienceSummaryCard: React.FC<Props> = ({
 
           {/* Increase */}
           <button
-            className={`border border-[#C9C9C9] flex items-center justify-center 
+            className={`border border-[#C9C9C9] flex items-center justify-center cursor-pointer
             w-5 h-5 max-[480px]:w-4 max-[480px]:h-4 ${
               quantity >= remainingSlots ? "opacity-50 cursor-not-allowed" : ""
             }`}
@@ -145,7 +145,7 @@ const ExperienceSummaryCard: React.FC<Props> = ({
     {/* Button */}
     <button
       className={`
-        rounded-[8px] font-medium
+        rounded-[8px] font-medium cursor-pointer
         w-full h-[44px] sm:h-[40px] max-[480px]:h-[36px]
         text-[16px] sm:text-[14px] max-[480px]:text-[13px]
         ${isConfirmEnabled 

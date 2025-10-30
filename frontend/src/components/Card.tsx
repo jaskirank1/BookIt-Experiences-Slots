@@ -109,6 +109,7 @@ const Card: React.FC<CardProps> = ({
               w-[99px] h-[30px]
               max-[320px]:w-[80px] max-[320px]:h-[26px]
               hover:bg-[#f7cd3d] transition
+              cursor-pointer
             "
           >
             View

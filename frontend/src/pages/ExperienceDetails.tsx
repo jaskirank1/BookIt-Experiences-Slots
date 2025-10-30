@@ -173,7 +173,7 @@ const ExperienceDetails = () => {
             <button
               key={date}
               onClick={() => setSelectedDate(date)}
-              className={`min-w-[65px] px-3 h-[34px] rounded-md text-[14px] border
+              className={`min-w-[65px] px-3 h-[34px] rounded-md text-[14px] border cursor-pointer
                 ${selectedDate === date
                   ? "bg-[#FFD643] text-black"
                   : "bg-white text-[#838383] border-[#BDBDBD]"
@@ -199,7 +199,7 @@ const ExperienceDetails = () => {
                 key={slot.time}
                 disabled={!selectedDate || sold}
                 onClick={() => !sold && selectedDate && setSelectedSlot(slot.time)}
-                className={`flex justify-between items-center min-w-[90px] sm:min-w-[110px] h-[34px] rounded-md px-2 text-[12px] sm:text-[13px] border
+                className={`flex justify-between items-center min-w-[90px] sm:min-w-[110px] h-[34px] rounded-md px-2 text-[12px] sm:text-[13px] border cursor-pointer
                   ${!selectedDate ? "bg-[#f2f2f2] text-[#A0A0A0]" :
                     sold ? "bg-[#CCCCCC]" :
                     sel ? "bg-[#FFD643] text-black" :

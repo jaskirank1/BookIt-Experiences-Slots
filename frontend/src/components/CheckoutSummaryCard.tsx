@@ -90,7 +90,7 @@ const CheckoutSummaryCard: React.FC<CheckoutSummaryCardProps> = ({
       <button
         onClick={onPayConfirm}
         className="
-          w-full h-[44px] rounded-[8px] bg-[#FFD643] text-[#161616]
+          w-full h-[44px] rounded-[8px] bg-[#FFD643] text-[#161616] cursor-pointer
           font-medium text-[16px] xs:text-[14px] hover:opacity-90 transition max-w-full
 
           max-[416px]:text-[13px] max-[416px]:h-[40px]

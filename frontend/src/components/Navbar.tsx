@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
         />
         <button
           onClick={() => setSearchTerm(localSearch)}
-          className="w-[87px] h-[42px] bg-[#FFD643] rounded-lg text-black font-medium hover:brightness-95 transition
+          className="cursor-pointer w-[87px] h-[42px] bg-[#FFD643] rounded-lg text-black font-medium hover:brightness-95 transition
                      lg:w-[70px] md:w-[60px]"
         >
           Search
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Search Icon */}
       <button
-        className="md:hidden p-2 bg-[#FFD643] rounded-full hover:brightness-95 transition ml-2"
+        className="cursor-pointer md:hidden p-2 bg-[#FFD643] rounded-full hover:brightness-95 transition ml-2"
         onClick={() => setShowMobileSearch((prev) => !prev)}
       >
         <Search className="text-black w-5 h-5" />
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Search Overlay */}
       {showMobileSearch && (
-        <div className="absolute top-[87px] left-0 w-full bg-white shadow-md flex items-center px-4 py-3 gap-3 md:hidden z-50">
+        <div className="absolute top-[87px] left-0 w-full bg-white shadow-md flex items-center px-4 py-3 gap-3 md:hidden z-50 cursor-pointer">
           <input
             type="text"
             placeholder="Search experiences..."
@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
               setSearchTerm(localSearch);
               setShowMobileSearch(false);
             }}
-            className="bg-[#FFD643] px-4 py-2 rounded-md text-black font-medium"
+            className="bg-[#FFD643] px-4 py-2 rounded-md text-black font-medium cursor-pointer"
           >
             Go
           </button>
