@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import CheckoutSummaryCard from "../components/CheckoutSummaryCard";
+import { toast } from "react-toastify";
 
 const Checkout = () => {
   const navigate = useNavigate();
@@ -70,12 +71,12 @@ const Checkout = () => {
 
   const handlePayConfirm = async () => {
     if (!agreed) {
-      alert("Please agree to the terms and safety policy before continuing.");
+      toast.error("Please agree to the terms and safety policy before continuing.");
       return;
     }
 
     if (!fullName || !email) {
-      alert("Please fill in your full name and email.");
+      toast.error("Please fill in your full name and email.");
       return;
     }
 
@@ -112,11 +113,11 @@ const Checkout = () => {
           state: { bookingId: data.data._id },
         });
       } else {
-        alert(data.message || "Failed to confirm booking");
+        toast.error(data.message || "Failed to confirm booking");
       }
     } catch (error) {
       console.error("Error confirming booking:", error);
-      alert("Something went wrong. Please try again.");
+      toast.error("Something went wrong. Please try again.");
     }
   };
 
